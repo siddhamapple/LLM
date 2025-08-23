@@ -1,0 +1,35 @@
+# Core DL + HF
+transformers>=4.44.0
+datasets>=2.21.0
+tokenizers>=0.19.0
+accelerate>=0.33.0
+sentencepiece>=0.2.0     # needed by some tokenizers
+evaluate>=0.4.2
+
+# PyTorch (install one of the following, comment the other)
+# CPU-only (works everywhere):
+torch>=2.3.0
+# CUDA (uncomment & install with the index url below for NVIDIA GPUs):
+# torchvision>=0.18.0
+# torchaudio>=2.3.0
+
+# Training utils
+scikit-learn>=1.5.0
+numpy>=1.26.4
+pandas>=2.2.0
+tqdm>=4.66.0
+
+# Config + logging
+PyYAML>=6.0.1
+rich>=13.7.0
+python-dotenv>=1.0.1
+
+# Optional quant / LoRA (Windows may have issues with bitsandbytes)
+peft>=0.11.1
+# bitsandbytes>=0.43.0   # optional; skip on Windows if it errors
+
+# Experiment tracking (optional but nice)
+tensorboard>=2.16.0
+
+# Testing
+pytest>=8.2.0
